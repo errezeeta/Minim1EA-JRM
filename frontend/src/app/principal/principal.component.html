@@ -1,0 +1,19 @@
+
+<div>
+    <button (click)="nuevavacuna()" class="btn-primary" >Añadir Nueva Vacuna al registro</button>
+</div>
+
+<div class="content-section">
+    <h2 class="col-lg-10">LISTA DE PERSONAS</h2>
+
+    <div>
+        <app-datos-usuarios class="mb-0" *ngFor="let usuario of usuarios"
+            [usuario]="usuario">
+        </app-datos-usuarios>
+    </div>
+    
+</div>
+
+<div>
+    <button (click)="nuevoUsuario()" class="btn-primary" >Añadir Persona al registro</button>
+</div>

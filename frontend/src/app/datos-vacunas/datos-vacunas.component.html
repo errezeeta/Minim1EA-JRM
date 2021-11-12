@@ -1,0 +1,29 @@
+<div class="datos-vacunas" *ngIf="vacuna">
+    <p>
+        ID vacuna: {{vacuna.id}}
+    </p>
+
+    <p>
+        Nombre de la vacuna: {{vacuna.nombre}}
+    </p>
+
+    <p>
+        Descripcion de la vacuna: {{vacuna.descripcion}}
+    </p>
+
+    <p>
+        Tecnología que utiliza la vacuna: {{vacuna.tecnologia}}
+    </p>
+
+    <p>
+        Fecha de aceptación de la vacuna: {{vacuna.fechaAceptacion}}
+    </p>
+
+    <button (click) = "delete()">
+        ELIMINAR 
+    </button>
+
+    <button (click) = "modificar()">
+        MODIFICAR
+    </button>
+</div>

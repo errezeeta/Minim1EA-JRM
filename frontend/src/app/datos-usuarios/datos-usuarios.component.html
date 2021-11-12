@@ -1,0 +1,34 @@
+<div class="datos-usuarios" *ngIf="usuario">
+    <p>
+        ID usuario: {{usuario.id}}
+    </p>
+
+    <p>
+        Username: {{usuario.username}}
+    </p>
+
+    <p>
+        Password: {{usuario.password}}
+    </p>
+
+    <p>
+        Email: {{usuario.email}}
+    </p>
+
+    <p>
+        Vacuna (si hay): {{usuario.vacunas}}
+    </p>
+
+    
+    <button (click) = "delete()">
+        ELIMINAR
+    </button>
+
+    <button (click) = "modificar()">
+        MODIFICAR
+    </button>
+
+    <button (click) = "nuevavax()">
+        INTRODUCIR VACUNA
+    </button>
+</div>
